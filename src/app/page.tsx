@@ -1,4 +1,10 @@
-import Image from 'next/image'
+import { Metadata } from 'next';
+import Image from 'next/image';
+
+export const metadata: Metadata = {
+  title: 'test metadata',
+  description: 'test description',
+};
 
 export default function Home() {
   return (
@@ -109,5 +115,5 @@ export default function Home() {
         </a>
       </div>
     </main>
-  )
+  );
 }
